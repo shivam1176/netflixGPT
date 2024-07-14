@@ -7,21 +7,14 @@ import { auth } from '../utils/firebase';
 const Login = () => {
     const [isSignIn, setIsSignInFrom] = useState(true);
     const [errorMessage,setErrorMessage] = useState(null);
-
-
-
     const email =useRef(null);
     const password =useRef(null);
-
-
     const toggleSignInForm=()=>{
         setIsSignInFrom(!isSignIn);
     };
-
     const handleButtonClick=()=>{
         // validate the form data 
-      const message =  checkValidData(email.current.value,password.current.value) ;
-      
+      const message =  checkValidData(email.current.value,password.current.value) ;   
       setErrorMessage(message);
       if(message) return ;
 
