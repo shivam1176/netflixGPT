@@ -3,7 +3,7 @@ import './App.css';
 import Body from './components/Body';
 function App() {
   return (
-    <div classname="text-bold ">
+    <div className="text-bold ">
 
       <Body/>
     </div>
